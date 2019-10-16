@@ -1,2 +1,2 @@
 #!/bin/bash
-find -name '*.sh' | sed 's/.sh//g; s/.\///g' 
+find -name '*.sh' | sed 's/.sh//g' | rev | cut -d "/" -f1 | rev
