@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Println("abcdefghijklmnopqrstuvwxyz\n")
+	fmt.Print("abcdefghijklmnopqrstuvwxyz")
+	fmt.Print("\n")
 }
