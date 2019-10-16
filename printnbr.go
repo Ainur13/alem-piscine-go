@@ -7,7 +7,7 @@ func PrintReverse(n int) {
 		m := n % 10
 		n = n / 10
 		PrintReverse(n)
-		z01.PrintRune(rune(m+48))
+		z01.PrintRune(rune(m + 48))
 	}
 }
 
