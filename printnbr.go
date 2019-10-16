@@ -5,34 +5,20 @@ import "github.com/01-edu/z01"
 func PrintNbr(n int) {
 	if n < 0 {
 		z01.PrintRune('-')
-		n = n * (-1)
+		n *= -1
 	}
-
-	nn := n
+	m := n
 	l := 0
-
-	for nn != 0 {
+	for m != 0 {
 		l++
-		nn = nn / 10
+		m /= 10
 	}
-
-	nn = n
-	rev := 0
-	for nn != 0 {
-		rem := nn % 10
-		nn = nn / 10
-		for i := 1; i < l; i++ {
-			rem = rem * 10
-		}
-		rev = rev + rem
-		l--
+	runes := make([]rune, l)
+	for i := l - 1; i >= 0; i-- {
+		runes[i] = rune(n % 10)
 	}
-
-	for rev != 0 {
-		rem := rev % 10
-		rev = rev / 10
-		var r rune = rune(rem + 48)
-		z01.PrintRune(r)
+	for i := 0; i < l; i++ {
+		z01.PrintRune(runes[i])
 	}
 
 }
