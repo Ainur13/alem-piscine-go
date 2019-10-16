@@ -24,26 +24,26 @@ func PrintComb2() {
 						}
 					}
 
-					if iRune4=='9' {
-						iRune4='0'
+					if iRune4 == '9' {
+						iRune4 = '0'
 					} else {
 						iRune4++
 					}
 				}
-				if iRune3=='9' {
-					iRune3='0'
+				if iRune3 == '9' {
+					iRune3 = '0'
 				} else {
 					iRune3++
 				}
 			}
-			if iRune2=='9' {
-				iRune2='0'
+			if iRune2 == '9' {
+				iRune2 = '0'
 			} else {
 				iRune2++
 			}
 		}
-		if iRune=='9' {
-			iRune='0'
+		if iRune == '9' {
+			iRune = '0'
 		} else {
 			iRune++
 		}
