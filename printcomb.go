@@ -9,8 +9,10 @@ func PrintComb() {
 				z01.PrintRune(iRune)
 				z01.PrintRune(iRune2)
 				z01.PrintRune(iRune3)
-				z01.PrintRune(',')
-				z01.PrintRune(' ')
+				if iRune != '7' && iRune != '8' && iRune != '9' {
+					z01.PrintRune(',')
+					z01.PrintRune(' ')
+				}
 			}
 		}
 	}
