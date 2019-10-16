@@ -31,7 +31,7 @@ func PrintNbr(n int) {
 	for rev != 0 {
 		rem := rev % 10
 		rev = rev / 10
-		var r rune = rune(rem+48)
+		var r rune = rune(rem + 48)
 		z01.PrintRune(r)
 	}
 
