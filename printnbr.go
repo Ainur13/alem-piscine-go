@@ -8,10 +8,31 @@ func PrintNbr(n int) {
 		n = n * (-1)
 	}
 
-	if n > 0 {
-		m := n % 10
-		n = n / 10
-		PrintNbr(n)
-		z01.PrintRune(rune(m + 48))
+	nn := n
+	l := 0
+
+	for nn != 0 {
+		l++
+		nn = nn / 10
 	}
+
+	nn = n
+	rev := 0
+	for nn != 0 {
+		rem := nn % 10
+		nn = nn / 10
+		for i := 1; i < l; i++ {
+			rem = rem * 10
+		}
+		rev = rev + rem
+		l--
+	}
+
+	for rev != 0 {
+		rem := rev % 10
+		rev = rev / 10
+		var r rune = rune(rem+48)
+		z01.PrintRune(r)
+	}
+
 }
