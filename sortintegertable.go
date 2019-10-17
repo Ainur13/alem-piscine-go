@@ -6,8 +6,8 @@ func SortIntegerTable(table []int) {
 		i = i
 		l++
 	}
-	for i := 0; i < l; i++{
-		for j := i+1; j < l; j++ {
+	for i := 0; i < l; i++ {
+		for j := i + 1; j < l; j++ {
 			if table[i] > table[j] {
 				t := table[i]
 				table[i] = table[j]
