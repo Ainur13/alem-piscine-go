@@ -1,11 +1,11 @@
 package strlen
 
 func StrLen(str string) int {
-	characters := []byte(str)
+	runes := []rune(str)
 	len := 0
-	for _, ch := range characters {
+	for _, r := range runes {
+		r = r
 		len++
-		ch = ch
 	}
 	return len
 }
