@@ -13,9 +13,8 @@ func BasicAtoi(s string) int {
 		for i := 1; i < l; i++ {
 			st *= 10
 		}
-		res = res + int(r-48) * st
+		res = res + int(r-48)*st
 		l--
 	}
-	
 	return res
 }
