@@ -5,6 +5,12 @@ func BasicAtoi2(s string) int {
 	res := 0
 	for _, r := range runes {
 		res *= 10
+		if r == ' ' {
+			return 0
+		}
+		if r != '0' && r != '1' && r != '2' && r != '3' && r != '4' && r != '5' && r != '6' && r != '7' && r != '8' && r != '9' {
+			return 0
+		}
 		if r == '0' {
 			res += 0
 		}
@@ -34,9 +40,6 @@ func BasicAtoi2(s string) int {
 		}
 		if r == '9' {
 			res += 9
-		}
-		if r == ' ' {
-			return 0
 		}
 	}
 	return res
