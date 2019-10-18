@@ -60,7 +60,7 @@ func PrintNbr(n int) {
 		}
 		if rem == 0 {
 			z01.PrintRune('0')
-		}		
-	}
-	
+		}
+				
+	}	
 }
