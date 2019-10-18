@@ -62,5 +62,5 @@ func PrintNbr(n int) {
 			z01.PrintRune('0')
 		}		
 	}
-
+	
 }
