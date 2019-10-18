@@ -31,7 +31,35 @@ func PrintNbr(n int) {
 	for rev != 0 {
 		rem := rev % 10
 		rev = rev / 10
-		z01.PrintRune(rune(48 + rem))
+		if rem == 1 {
+			z01.PrintRune('1')
+		}
+		if rem == 2 {
+			z01.PrintRune('2')
+		}
+		if rem == 3 {
+			z01.PrintRune('3')
+		}
+		if rem == 4 {
+			z01.PrintRune('4')
+		}
+		if rem == 5 {
+			z01.PrintRune('5')
+		}
+		if rem == 6 {
+			z01.PrintRune('6')
+		}
+		if rem == 7 {
+			z01.PrintRune('7')
+		}
+		if rem == 8 {
+			z01.PrintRune('8')
+		}
+		if rem == 9 {
+			z01.PrintRune('9')
+		}
+		if rem == 0 {
+			z01.PrintRune('0')
+		}		
 	}
-
 }
