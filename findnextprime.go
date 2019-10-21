@@ -1,7 +1,7 @@
-package finnextprime
+package findnextprime
 
 func FindNextPrime(nb int) int {
-	if nb > 1000000 {
+	if nb > 1000000100 {
 		return 0
 	}
 	if nb <= 1 {
@@ -11,12 +11,11 @@ func FindNextPrime(nb int) int {
 	for i := 2; i <= nb/2; i++ {
 		if nb%i == 0 {
 			isprime = false
+			i = nb/2 + 1
 		}
 	}
-	if isprime == true {
-		return nb
-	} else {
-		FindNextPrime(nb + 1)
-	}
-	return 0
+	if isprime != true {
+		return FindNextPrime(nb + 1)
+	} 
+	return nb
 }
