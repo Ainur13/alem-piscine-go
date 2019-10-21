@@ -13,7 +13,6 @@ func FindNextPrime(nb int) int {
 	if isprime == true {
 		return nb
 	}
-	
 	for j := nb; j <= nb+1000; j++ {
 		isprime = true
 		for i := 2; i <= j/2; i++ {
