@@ -30,8 +30,8 @@ func Raid1a(x,y int) {
 }
 
 func main() {
-	//Raid1a(5,3)
-	//Raid1a(5,1)
-	//Raid1a(1,1)
+	Raid1a(5,3)
+	Raid1a(5,1)
+	Raid1a(1,1)
 	Raid1a(1,5)
 }
