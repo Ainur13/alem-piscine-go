@@ -23,7 +23,7 @@ func PrintNbrInOrder(n int) {
 				}
 			}
 		}
-		for _, l in runes {
+		for _, l := range runes {
 			fmt.Print(l)
 		}
 	}
