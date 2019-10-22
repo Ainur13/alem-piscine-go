@@ -13,7 +13,7 @@ func Index(s string, toFind string) int {
 	}
 	if l1 == 0 || l2 == 0 {
 		return -1
-	} 
+	}
 	for i := 0; i < l1-l2; i++ {
 		if s[i] == toFind[0] {
 			eq := true
