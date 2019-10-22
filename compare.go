@@ -11,7 +11,7 @@ func Compare(a, b string) int {
 		i = i
 		l2++
 	}
-	if l1 == 0 && l2 ==  0 {
+	if l1 == 0 && l2 == 0 {
 		return 0
 	} else if l1 == 0 {
 		return -1
