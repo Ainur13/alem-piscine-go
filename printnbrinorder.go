@@ -6,12 +6,12 @@ func PrintNbrInOrder(n int) {
 	var nums []int
 	if n == 0 {
 		nums = append(nums, n)
-	} 
+	}
 	l := 0
 	for n > 0 {
-			nums = append(nums, n % 10)
-			n = n / 10
-			l++
+		nums = append(nums, n % 10)
+		n = n / 10
+		l++
 	}
 	for i := 0; i < l; i++ {
 		for j := i + 1; j < l; j++ {
