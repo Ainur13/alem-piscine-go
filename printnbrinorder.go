@@ -1,11 +1,11 @@
 package printnbrinorder
 
-import "github.com/01-edu/z01.PrintRune"
+import "fmt"
 
 func PrintNbrInOrder(n int) {
 	var runes []rune
 	if n == 0 || n < 0 {
-		z01.PrintRune('0')
+		fmt.Print(0)
 	} else {
 		l := 0
 		for n > 0 {
@@ -23,8 +23,8 @@ func PrintNbrInOrder(n int) {
 				}
 			}
 		}
-		for i := 0; i < l; i++ {
-			z01.PrintRune(runes[i])
+		for _, l in runes {
+			fmt.Print(l)
 		}
 	}
 }
