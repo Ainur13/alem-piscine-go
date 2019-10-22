@@ -5,7 +5,7 @@ import "github.com/01-edu/z01.PrintRune"
 func PrintNbrInOrder(n int) {
 	var runes []rune
 	if n==0 || n<0 {
-		z01.Print('0')
+		z01.PrintRune('0')
 	} else {
 		l := 0
 		for n > 0 {
@@ -24,7 +24,7 @@ func PrintNbrInOrder(n int) {
 			}
 		}
 		for i := 0; i < l; i++ {
-			z01.Print(runes[i])
+			z01.PrintRune(runes[i])
 		}
 	}
 }
