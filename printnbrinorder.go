@@ -9,7 +9,7 @@ func PrintNbrInOrder(n int) {
 	}
 	l := 0
 	for n > 0 {
-		nums = append(nums, n % 10)
+		nums = append(nums, n%10)
 		n = n / 10
 		l++
 	}
