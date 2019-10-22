@@ -21,7 +21,7 @@ func Compare(a, b string) int {
 		min := 0
 		if l1 >= l2 {
 			min = l2
-		} else if l2 > l1{
+		} else if l2 > l1 {
 			min = l1
 		}
 		for i := 0; i < min; i++ {
