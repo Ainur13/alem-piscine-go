@@ -4,7 +4,7 @@ func TrimAtoi(s string) int {
 	c := 0
 	isneg := false
 	num := 0
-	for _,l := range s {
+	for _, l := range s {
 		if c == 0 && l == '-' {
 			isneg = true
 		}
