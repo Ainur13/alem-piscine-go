@@ -11,8 +11,11 @@ func Index(s string, toFind string) int {
 		i = i
 		l2++
 	}
-	if l1 == 0 || l2 == 0 {
+	if l1 == 0 {
 		return -1
+	}
+	if l2 == 0 {
+		return 0
 	}
 	for i := 0; i < l1-l2; i++ {
 		if s[i] == toFind[0] {
