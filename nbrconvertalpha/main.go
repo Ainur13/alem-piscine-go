@@ -18,11 +18,11 @@ func main() {
 		isupper = true
 	}
 	for i, s := range args {
-		if (isupper && i > 1) || (!isupper && i > 0) {
+		if (isupper && i > 0) || (!isupper && i > 0) {
 			runes := []rune(s)
 			isnum := true
 			for _, r := range runes {
-				if r < '1' || r > '9' {
+				if r < '0' || r > '9' {
 					isnum = false
 				}
 			}
