@@ -11,4 +11,5 @@ func main() {
 	for _, l := range filename {
 		z01.PrintRune(l)
 	}
+	z01.PrintRune('\n')
 }
