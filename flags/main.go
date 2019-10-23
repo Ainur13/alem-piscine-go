@@ -10,7 +10,7 @@ import (
 
 func main() {
 	args := os.Args
-	help := "--insert\n\t-i\n\t\tThis flag inserts the string into the string passed as argument.\n--order\n\t-o\n\t\tThis flag will behave like a boolean, if it is called it will order the argument"
+	help := "--insert\n  -i\n\t This flag inserts the string into the string passed as argument.\n--order\n  -o\n\t This flag will behave like a boolean, if it is called it will order the argument."
 	len := 0
 	for i := range args {
 		i = i
