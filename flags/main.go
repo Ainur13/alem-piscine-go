@@ -2,7 +2,6 @@ package main
 
 import (
 	"os"
-	"strings"
 
 	"fmt"
 
@@ -24,9 +23,21 @@ func main() {
 		insert := ""
 		for i, s := range args {
 			if i > 0 {
-				substrings := strings.Split(s, "=")
-				if substrings[0] == "--insert" || substrings[0] == "-i" {
-					insert = substrings[1]
+				runes := []rune(s)
+				s1 := ""
+				s2 := ""
+				isEquality := false
+				for _, r := range runes {
+					if r == '=' {
+						isEquality = true
+					} else if !isEquality {
+						s1 += string(r)
+					} else if isEquality {
+						s2 += string(r)
+					}
+				}
+				if s1 == "--insert" || s1 == "-i" {
+					insert = s2
 				} else if s == "--order" || s == "-o" {
 					order = true
 				} else if s == "--help" || s == "-h" {
