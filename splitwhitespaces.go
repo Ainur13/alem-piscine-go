@@ -16,7 +16,7 @@ func SplitWhiteSpaces(str string) []string {
 			arr[i] = word
 			word = ""
 			i++
-		} else if l == ' ' {
+		} else if l != ' ' {
 			word += string(l)
 		}
 	}
