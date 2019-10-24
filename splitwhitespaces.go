@@ -7,21 +7,22 @@ func SplitWhiteSpaces(str string) []string {
 			len++
 		}
 	}
-	len++
 	arr := make([]string, len)
 	word := ""
 	i := 0
 	for _, l := range str {
-		if l == ' ' && word != "" {
-			arr[i] = word
+		if l == ' ' {
+			if word != "" {
+				arr[i] = word
+				i++
+			}
 			word = ""
-			i++
-		} else if l != ' ' {
+		} else {
 			word += string(l)
 		}
-	}
-	if word != "" {
-		arr[i] = word
+		if word != "" {
+			arr[i] = word
+		}
 	}
 	return arr
 }
