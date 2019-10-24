@@ -12,7 +12,7 @@ func SplitWhiteSpaces(str string) []string {
 	word := ""
 	i := 0
 	for _, l := range str {
-		if l == ' ' {
+		if l == ' ' && word != "" {
 			arr[i] = word
 			word = ""
 			i++
