@@ -1,6 +1,8 @@
 package piscine
 
-func PrintNbrBase(nbr int, base string) () {
+import "github.com/01-edu/z01"
+
+func PrintNbrBase(nbr int, base string) {
 	l := 0
 	for _, s := range base {
 		if s == '-' || s == '+' {
@@ -16,7 +18,7 @@ func PrintNbrBase(nbr int, base string) () {
 		return
 	}
 	for i := 0; i < l-1; i++ {
-		for j := i+1; j < l; j++ {
+		for j := i + 1; j < l; j++ {
 			if base[i] == base[j] {
 				z01.PrintRune('N')
 				z01.PrintRune('V')
@@ -39,7 +41,7 @@ func PrintNbrBase(nbr int, base string) () {
 		i = i
 		ll++
 	}
-	for i := ll-1; i >= 0; i-- {
+	for i := ll - 1; i >= 0; i-- {
 		z01.PrintRune(rune(res[i]))
-	} 
+	}
 }
