@@ -20,6 +20,8 @@ func SplitWhiteSpaces(str string) []string {
 			word += string(l)
 		}
 	}
-	arr[i] = word
+	if word != "" {
+		arr[i] = word
+	}
 	return arr
 }
