@@ -1,4 +1,6 @@
-package piscine
+package main
+
+import "fmt"
 
 func SplitWhiteSpaces(str string) []string {
 	lens := 0
@@ -30,4 +32,10 @@ func SplitWhiteSpaces(str string) []string {
 		}
 	}
 	return arr
+}
+
+func main() {
+	str := " Hello  how are you? "
+	fmt.Println(SplitWhiteSpaces(str))
+	fmt.Println(len(SplitWhiteSpaces(str)))
 }
