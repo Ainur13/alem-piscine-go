@@ -1,4 +1,4 @@
-package oiscine
+package piscine
 
 func AppendRange(min, max int) []int {
 	var arr []int
