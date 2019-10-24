@@ -1,41 +1,22 @@
 package main
 
-import "fmt"
+import (
+	piscine ".."
+	"github.com/01-edu/z01"
+)
 
-func SplitWhiteSpaces(str string) []string {
-	lens := 0
-	for i := range str {
-		i = i
-		lens++
-	}
-	len := 0
-	for i, l := range str {
-		if l == ' ' && i > 0 && str[i-1] != ' ' && i != lens-1 {
-			len++
+func PrintWordsTables(table []string) {
+	for _, w := range table {
+		runes := []rune(w)
+		for _, r := range runes {
+			z01.PrintRune(r)
 		}
+		z01.PrintRune('\n')
 	}
-	arr := make([]string, len+1)
-	word := ""
-	i := 0
-	for _, l := range str {
-		if l == ' ' {
-			if word != "" {
-				arr[i] = word
-				i++
-			}
-			word = ""
-		} else {
-			word += string(l)
-		}
-		if word != "" {
-			arr[i] = word
-		}
-	}
-	return arr
 }
 
 func main() {
-	str := " Hello  how are you? "
-	fmt.Println(SplitWhiteSpaces(str))
-	fmt.Println(len(SplitWhiteSpaces(str)))
+	str := "Hello how are you?"
+	table := piscine.SplitWhiteSpaces(str)
+	PrintWordsTables(table)
 }
