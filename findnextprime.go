@@ -1,4 +1,4 @@
-package findnextprime
+package piscine
 
 func FindNextPrime(nb int) int {
 	if nb > 1000000100 {

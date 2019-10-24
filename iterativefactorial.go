@@ -1,4 +1,4 @@
-package iterativefactorial
+package piscine
 
 func IterativeFactorial(nb int) int {
 	if nb > 20 || nb < 0 {

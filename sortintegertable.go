@@ -1,4 +1,4 @@
-package sortintegertable
+package piscine
 
 func SortIntegerTable(table []int) {
 	l := 0

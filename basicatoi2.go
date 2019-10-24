@@ -1,4 +1,4 @@
-package basicatoi2
+package piscine
 
 func BasicAtoi2(s string) int {
 	runes := []rune(s)

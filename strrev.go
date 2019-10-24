@@ -1,4 +1,4 @@
-package strrev
+package piscine
 
 func StrRev(s string) string {
 	chars := []byte(s)

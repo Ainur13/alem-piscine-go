@@ -1,4 +1,4 @@
-package isprime
+package piscine
 
 func IsPrime(nb int) bool {
 	if nb <= 1 {

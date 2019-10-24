@@ -1,6 +1,7 @@
-package main
+package piscine
 
 import "fmt"
+
 //import "github.com/01-edu/z01.PrintRune"
 
 func EightQueens() {
@@ -22,7 +23,7 @@ func EightQueens() {
 			lines[pos[x]] = false
 			diag1[pos[x]+x] = true
 			diag2[pos[x]-x+8] = false
-			pos[x]++ 
+			pos[x]++
 		} else {
 			if lines[pos[x]] == false && diag1[pos[x]+x] == false && diag2[pos[x]-x+8] == false {
 				lines[pos[x]] = true

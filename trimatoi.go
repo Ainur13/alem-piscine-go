@@ -1,4 +1,4 @@
-package trimatoi
+package piscine
 
 func TrimAtoi(s string) int {
 	c := 0
